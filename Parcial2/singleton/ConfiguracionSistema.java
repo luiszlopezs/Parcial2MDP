@@ -25,25 +25,27 @@ public class ConfiguracionSistema {
         return directorioSalida;
     }
 
-    public void setDirectorioSalida(String dir) {
-        directorioSalida = dir;
-    }
-
-    public String getFormatoPorDefecto() {
+        public String getFormatoPorDefecto() {
         return formatoPorDefecto;
     }
 
-    public void setFormatoPorDefecto(String f) {
-        formatoPorDefecto = f;
+    public void setDirectorioSalida(String directorio) {
+        directorioSalida = directorio;
+    }
+
+    public void setFormatoPorDefecto(String formato) {
+        formatoPorDefecto = formato;
+    }
+
+        public void setMostrarMarcaAgua(boolean marca) {
+        mostrarMarcaAgua = marca;
     }
 
     public boolean isMostrarMarcaAgua() {
         return mostrarMarcaAgua;
     }
 
-    public void setMostrarMarcaAgua(boolean m) {
-        mostrarMarcaAgua = m;
-    }
+
 
     public void mostrarConfiguracion() {
         System.out.println("Directorio: " + directorioSalida);
